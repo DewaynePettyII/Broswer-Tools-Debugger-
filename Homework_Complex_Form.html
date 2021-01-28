@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!-- the Break Point in the JS code.
+    At each Breack Point, JS will stop exicuting, and let you examine the JS value.
+    And after examining the values, you can resume the execution of code. -->
+
+<!-- You can set break points for a developer tool anywhere in the code. Setting break points is imilar to 
+    putting a debugger in the code. You can set the break points by clicking on the line number of
+    the source code. -->
+<html>
+    <head>
+        <title>
+            Break Points
+        </title>
+    </head>
+    <body>
+        <p id="demo">Example for Break Point. Visual representation for the browser.</p>
+        <script>
+           var x = 15 * 5;
+        //    debugger;
+           document.getElementById("demo").innerHTML = x;
+           for (var i = 0; i < 10; i++) {
+                if (i == 5){
+                    debugger;
+                }
+           }
+           var car = {color: "white", brand: "Toyota"};
+           debugger;
+        </script>
+    </body>
+</html>
